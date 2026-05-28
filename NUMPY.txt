@@ -1,0 +1,82 @@
+ARRAY CREATION
+array() - Create NumPy array   np.array([1,2,3])
+zeros() - Create array filled with 0   np.zeros((2,3))
+ones() - Create array filled with 1   np.ones((2,3))
+empty() - contains random memory values   np.empty((2,2))
+full() - Fill with chosen value   np.full((2,2), 7)
+arange() - Range array    np.arange(0,10,2)
+linspace() - Evenly spaced values    np.linspace(0,1,5)
+eye() - Identity matrix   np.eye(3)
+diag() - Diagonal matrix   np.diag([1,2,3])
+
+
+ARRAY INSPECTION
+shape - Rows & columns   arr.shape
+ndim - Number of dimensions    arr.ndim
+size - Total elements    arr.size
+dtype - Data type   arr.dtype
+astype() - Change datatype    arr.astype(float)
+
+
+INDEXING & SELECTION
+arr[1:5] - Slicing
+arr[arr > 5] - Boolean indexing
+np.where(arr > 5) - Conditional selection 
+arr.argmax() - Index of maximum
+arr.argmin() - Index of minimum
+np.nonzero(arr)- Locations of nonzero elements
+
+
+SHAPE MANIPULATION
+arr.reshape(2,3) - Change dimensions
+arr.flatten() - Convert to 1D
+arr.ravel() - Flatten efficiently
+arr.T - transpose()
+np.expand_dims(arr, axis=0) - Add dimension  0 for row, 1 for columns
+np.squeeze(arr) - Remove dimension of size 1
+
+
+MATH & STATISTICS
+np.sum(arr) - Total sum
+np.mean(arr) - average
+np.median(arr) - middle value
+np.std(arr) - standard deviation
+np.var(arr) - variance
+np.max(arr) - maximum
+np.min(arr) - minimum
+np.percentile(arr, 90) - Percentile values
+np.unique(arr) - unique elements
+np.clip(arr,0,100) - limit values
+np.round(arr,2) - round numbers
+np.abs(arr) - absolute value
+np.sqrt(arr) - (arr)
+np.exp(arr) - Exponential
+np.log(arr) - Logarithm
+
+
+COMBINING & SPLITTING
+np.concatenate([a,b]) - join arrays
+np.stack([a,b]) - stack along new axis
+np.vstack([a,b]) - vertical stack
+np.hstack([a,b]) - horizontal stack
+np.split(arr,2) - split arrays
+np.array_split(arr,3) - flexible split
+
+
+LINEAR ALGEBRA
+np.dot(a,b) - dot product
+np.matmul(a,b) - matrix multiplicaton
+np.linalg.inv(arr) - inverse matrix
+np.linalg.det(arr) - determinant
+np.linalg.eig(arr) -  eigen values, vector
+np.linalg.svd(arr) - single value decomposition
+np.linalg.norm(arr) - vector magnitude
+
+
+RANDOM FUNCTIONS
+np.random.rand(3) - Random uniform values
+np.random.randn(3) - Random normal distribution
+np.random.randint(0,10,5) - random integers 
+np.random.choice(arr) - Random selection
+np.random.shuffle(arr) - Shuffle array
+np.random.seed(42) - Reproducible randomness

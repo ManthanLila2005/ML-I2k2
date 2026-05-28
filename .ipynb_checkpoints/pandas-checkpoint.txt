@@ -1,0 +1,165 @@
+Used for: bringing data in / saving results
+
+read_csv() → load CSV file into DataFrame
+read_excel() → load Excel sheet
+read_json() → load JSON data
+read_sql() → load data from database
+read_html() → extract tables from web pages
+read_parquet() → fast big-data file loading
+to_csv() → save DataFrame to CSV
+to_excel() → save to Excel
+to_json() → save as JSON
+to_sql() → save to database
+
+
+Used for: understanding dataset
+
+head() → first rows preview
+tail() → last rows preview
+sample() → random rows
+info() → column types + nulls
+describe() → stats summary
+shape → rows & columns count
+columns → column names
+dtypes → data types
+index → row index info
+memory_usage() → memory consumption
+
+
+Used for: detecting and fixing nulls
+
+isna() / isnull() → find missing values
+notna() → find non-missing values
+dropna() → remove missing rows/columns
+fillna() → replace missing values
+replace() → replace any value
+interpolate() → fill using trend
+ffill() → forward fill
+bfill() → backward fill
+
+
+Used for: picking data
+
+loc[] → label-based selection
+iloc[] → position-based selection
+at[] → single value by label
+iat[] → single value by index
+filter() → select columns/rows
+query() → SQL-like filtering
+isin() → check membership
+between() → range filtering
+where() → keep values conditionally
+mask() → replace values conditionally
+
+
+Used for: ordering data
+
+sort_values() → sort by column
+sort_index() → sort by index
+rank() → ranking values
+nlargest() → top values
+nsmallest() → lowest values
+
+
+Used for: changing structure
+
+drop() → remove rows/columns
+rename() → rename columns
+assign() → add new columns
+insert() → insert column at position
+pop() → remove + return column
+set_index() → change index
+reset_index() → reset index
+astype() → change datatype
+copy() → duplicate dataset
+update() → overwrite values
+
+
+Used for: summarizing data
+
+groupby() → group data
+agg() → multiple aggregations
+mean() → average
+sum() → total
+count() → count values
+min() / max() → extremes
+median() → middle value
+std() → spread
+var() → variance
+apply() → custom logic per group
+transform() → transform group values
+
+
+Used for: joining datasets (SQL style)
+
+merge() → SQL join
+concat() → stack datasets
+join() → join by index
+merge_asof() → time-based join
+merge_ordered() → ordered merge
+combine_first() → fill missing from another df
+pivot() → reshape data
+pivot_table() → aggregated pivot
+crosstab() → frequency table
+
+
+Used for: text cleaning
+
+str.lower() → lowercase
+str.upper() → uppercase
+str.contains() → search text
+str.replace() → replace text
+str.split() → split strings
+str.strip() → remove spaces
+str.len() → string length
+str.extract() → regex extraction
+str.findall() → find patterns
+str.cat() → join strings
+
+
+Used for: time-series data
+
+to_datetime() → convert to date
+date_range() → generate dates
+Timedelta() → time difference
+dt.year → extract year
+dt.month → extract month
+dt.day → extract day
+dt.hour → extract hour
+dt.weekday → day of week
+dt.strftime() → format date
+resample() → time aggregation
+
+
+Used for: custom logic
+
+apply() → apply function
+map() → map values
+applymap() → element-wise (DataFrame)
+pipe() → chain operations
+eval() → fast expression evaluation
+
+
+Used for: feature engineering
+
+clip() → limit values
+round() → rounding
+abs() → absolute values
+diff() → difference between rows
+shift() → shift data
+pct_change() → percentage change
+cumsum() → cumulative sum
+cumprod() → cumulative product
+rolling() → moving window
+expanding() → cumulative window
+
+
+Used for: changing structure
+
+melt() → wide to long
+stack() → columns → rows
+unstack() → rows → columns
+wide_to_long() → reshape format
+explode() → expand lists
+get_dummies() → one-hot encoding
+
