@@ -1,0 +1,184 @@
+Q1)What is the purpose of setting up a separate Python environment for a machine learning project?
+ans) different machine learning project usually require different type of features and different versions of software and sometime different version of software kept in same place may interfere with other's working therefore a separate environment is created for different ml projects with all necessary stuff present in the environment with interfering with other environments.
+
+
+Q2) Write the steps or commands to create and activate a Python virtual environment
+ans) 1) in terminal write "conda create --name myenv python=3.12"
+2) conda activate myenv
+
+
+Q3) Why is a requirements.txt file important in a machine learning project?
+ans) a requirements.txt file is compiled data of all the resources a ml project require in an environment. it is important as it helps us manage and keep track of all the resources that are present and to be installed. this also serves as guide to what all resourced be needed to run the ml project.
+
+
+Q4)Explain the difference between installing a library globally and installing it inside a virtual environment.
+ans) installing a library globally means it can be accesed by anyone in the system and installing it in a virtual environment means it will only be accessible by projects present in that environment.
+
+Q5) Explain the difference between a list, tuple, set, and dictionary in Python?
+ans) the common difference between list tupple and set is set cannot contain duplicate character but list and tuple can, other difference is tuple is immutable while set and list are mutable. although these three are collection of letter, symbols or numbers they differ in following ways.
+
+
+Q6) Write a Python function that takes a list of numbers and returns only the even numbers.
+ans) def e_no(arr[]):
+        for i in range(0,len(arr)):
+             if arr[i]%2==0:
+                print(arr[i])
+
+
+Q7)  What is the difference between == and is in Python? Explain with an example
+ans) == is used to check if the value of 2 variables are equal and is is used to check if 2 variables points at the same memory block.
+
+
+Q8) What is the use of conditional statements in Python? Write a small example using if , elif , and
+else .
+ans) conditional statements are statement that are used to create a filter if the condition is satisfied in the statement then only the code under the statement will execute.
+if (a==0):
+  a=1
+elif(a==1):
+  a=10
+else:
+  a=100
+
+
+Q9) Explain how a for loop is different from a while loop in Python.
+ans) a for loop is used when you want to iterate a loop for a known no. of time and while loop runs till the condition in it is satisfies so it will run as long is condition is satified.
+
+
+Q10) What is list comprehension in Python? Write one example.
+ans) list comprehension is a method of creating new list by modifying each element of an already existing list or a particular range. eg-
+squares = [x**2 for x in range(1, 6)]
+print(squares)
+
+
+Q11)What is NumPy, and why is it commonly used in machine learning?
+ans) NumPy or numerical python is a python library that is used for processing arrays and matrices, it is commonly used in machine learning as it is fast, efficient and less space consuming compared to traditional list tuple or set.
+
+
+Q12) Create a NumPy array containing numbers from 1 to 10 and reshape it into a 2 × 5 matrix.
+ans) 
+import numpy as np
+arr = np.arange(1, 11)
+m = arr.reshape(2, 5)
+print(m)
+
+
+Q13) Explain the concept of array shape and dimension in NumPy.
+ans) array shape refers to the no of element in each level while dimension refers to the no. of levels a array has.
+
+
+Q14) What is broadcasting in NumPy? Explain with an example
+ans) broadcasting refers to a mechanism of array where an array of smaller dimension automatically stretches to perform operation on larger arrays
+
+
+Q15) Given a NumPy array, how would you calculate its mean, maximum value, minimum value, and standard
+deviation?
+ans) Max=np.max(arr)
+Min=np.min(arr)
+Mean=np.mean(arr)
+Std=np.std(arr)
+
+
+Q16) Explain the difference between element-wise multiplication and matrix multiplication in NumPy.
+ans) element wise multiplication refers to the multiplication of elements present on same location in an array and matrix multiplication refers to the normal matrix multiplication where row is multiplied to column to get their multiplication.
+
+
+Q17)What is Pandas, and why is it useful for data analysis and machine learning?
+ans)pandas is a python library that is used for data manipulation, data cleaning and analysis. it helps in reading and writing different types of data like csv file, excel file or bases.
+
+
+Q18)Explain the difference between a Pandas Series and a Pandas DataFrame
+ans) series is 1-d data structure while data-frame is a 2-D datastucture like a table with rows and columns.
+
+
+Q19)Write the code to read a CSV file named sales_data.csv into a Pandas DataFrame.
+ans) import pandas as pd
+df=pd.read_csv("sales_data.csv")
+
+
+Q20)Given a DataFrame, how would you display the first five rows, column names, and summary statistics?
+ans) print(df.head())
+print(df.columns)
+print(df.describe())
+
+
+Q21)What is the purpose of checking missing values in a dataset? Write the Pandas command to check
+missing values column-wise.
+ans)missing values in a dataset causes interruption in processing the data, so we need to resolve those mission value by dropping or filling the missing values, so to find what would be the best case for resolving missing values we first check the missing value and plan appropriate action to resolve them. 
+df.isnull().sum()
+
+
+Q22)Explain the difference between loc and iloc in Pandas?
+ans)loc and iloc are used to select data from a dataframe but loc used row and column title while iloc selects data based on indexing value of data.
+
+
+Q23)Write code to filter rows from a DataFrame where the value in the Salary column is greater than 40,000.
+ans)df=df[df['Salary'] > 40000]
+
+
+Q24)Why is data visualization important before building a machine learning model?
+ans)data visualization is very important before building machine learning model as it helps you visualise and understand data so you can process the data better while building a machine learning model.
+
+
+Q25)Which type of chart would you use to show the distribution of customer ages, and why?
+ans)histogram, bargraph
+
+
+Q26)Which type of chart would you use to show the relationship between advertising spend and sales
+revenue, and why?
+ans) Scatterplot, linegraph
+
+
+Q27)Write Python code using Matplotlib to create a simple line chart using months and sales data.
+ans)import matplotlib.pyplot as plt
+plt.plot(months, sales)
+plt.title("Month Sales")
+plt.xlabel("Months")
+plt.ylabel("Sales")
+plt.show()
+
+
+Q28)What is the purpose of chart title, axis labels, and legend in data visualization?
+ans)chart title refers to the title of the graph that describes what the graph is all about. axis labels are used to describe what the axis are or what a axis represents. and legend contains all the necessary information to read the graph like color of lines or a particular symbol or pattern.
+
+
+Q29)Calculate the mean, median, and mode for the following data:
+10, 15, 15, 20, 25, 30
+ans)mean = 115/6= 19.1666
+median=35/2= 17.5
+mode= 15
+
+
+Q30)Explain the difference between variance and standard deviation. Why are they useful in data analysis?
+ans)variance refers to the sum of all the square of difference between data and mean of whole dataset. standard deviation is square root of variance.it is useful in data analysis as it helps us know how wide the data is spread and which data are causing high deviation which helps in cleaning and analysing data.
+
+
+Q31)What is probability, and how is it used in machine learning?
+ans) probability is how likely an event is going to occur based on total possible outcomes. it is used in machine learning to predict outcomes based on probability of an event occurring.
+
+
+Q32)A bag contains 5 red balls, 3 blue balls, and 2 green balls. If one ball is selected randomly, what is the
+probability of selecting a blue ball?
+ans) 3/10=0.3
+
+
+Q33) Explain the difference between independent and dependent events with one example each.
+ans) dependent events are those event which are directly affected by the probability of another event occurring, independent events are events which does not depend on any other events
+
+
+Q34) A coin is tossed twice. List all possible outcomes and calculate the probability of getting exactly one
+head.
+ans)([H,H],[H,T], [T,H],[T,T])
+P=2/4 = 0.5
+
+
+Q35) What is conditional probability? Explain with a simple example
+ans) conditional probability is the probability of an event occurring given that another event i already triggered.eg probability of sum of two dice to be greater than 6 given that 1 dice rolled 6.
+
+
+Q36)A dataset contains 70% non-fraud transactions and 30% fraud transactions. If one transaction is selected
+randomly, what is the probability that it is fraud?
+ans) 3/10= 0.3
+
+
+Q37)Explain why probability is important for classification models in machine learning.
+ans)probability is important for classification models in machine learning as it helps us predict which data will fall into which category and thus helps us in classifying data.
